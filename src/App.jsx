@@ -3,14 +3,21 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import './App.css';
 import AboutUs from './AboutUs';
+import CartItem from './CartItem'
 
 function App() {
   
   const [showProductList, setShowProductList] = useState(false);
 
+  const onContinueShopping = () => {
+    setShowProductList(true)
+  }
+
   const handleGetStartedClick = () => {
     setShowProductList(true);
   };
+
+  // This is a test for add and push
 
   return (
     <div className="app-container">
@@ -35,11 +42,11 @@ function App() {
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
         <ProductList />
       </div>
+      {/* <div className={`cart-container ${true ? 'visible' : ''}`}>
+        <CartItem onContinueShopping={onContinueShopping}/>
+      </div> */}
     </div>
   );
 }
 
 export default App;
-
-
-

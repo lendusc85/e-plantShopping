@@ -1,9 +1,9 @@
 {
+  "homepage": "https://lendusc85.github.io/e-plantShopping",
   "name": "shoppingcart",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lendusc85.github.io/e-plantShopping",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -29,5 +29,4 @@
     "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
-
 }
